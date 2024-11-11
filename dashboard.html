@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Personal Finance Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Add Chart.js library -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Get an overview of your finances at a glance.</p>
+        <nav>
+            <a href="income.html">Income</a>
+            <a href="expense.html">Expenses</a>
+            <a href="savings.html">Savings</a>
+            <a href="summary.html">Summary</a>
+            <a href="assets.html">Assets</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Summary Section -->
+        <section id="summary">
+            <h2>Financial Summary</h2>
+            <div id="income-summary">
+                <h3>Total Income</h3>
+                <p>$2000</p>
+            </div>
+            <div id="expense-summary">
+                <h3>Total Expenses</h3>
+                <p>$1200</p>
+            </div>
+            <div id="savings-summary">
+                <h3>Total Savings</h3>
+                <p>$800</p>
+            </div>
+        </section>
+
+        <!-- Expense Chart -->
+        <section id="charts">
+            <h2>Financial Insights</h2>
+            <canvas id="expenseChart" width="400" height="200"></canvas>
+            <script>
+                const ctx = document.getElementById('expenseChart').getContext('2d');
+                const expenseChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Housing', 'Food', 'Transport', 'Entertainment', 'Other'],
+                        datasets: [{
+                            label: 'Spending Breakdown',
+                            data: [30, 20, 15, 25, 10], // Example percentages for each category
+                            backgroundColor: [
+                                '#FF6384', // Housing
+                                '#36A2EB', // Food
+                                '#FFCE56', // Transport
+                                '#4BC0C0', // Entertainment
+                                '#9966FF'  // Other
+                            ],
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            tooltip: {
+                                enabled: true,
+                            },
+                        }
+                    }
+                });
+            </script>
+        </section>
+
+        <!-- Quick Actions -->
+        <section id="quick-actions">
+            <h2>Quick Actions</h2>
+            <button onclick="location.href='income.html'">Add Income</button>
+            <button onclick="location.href='expense.html'">Add Expense</button>
+            <button onclick="location.href='savings.html'">Set Savings Goal</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Personal Finance Manager. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

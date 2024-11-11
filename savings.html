@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Savings Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Track Your Savings</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="income.html">Income</a>
+            <a href="expense.html">Expenses</a>
+            <a href="summary.html">Summary</a>
+            <a href="assets.html">Assets</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="savings-form">
+            <h2>Add New Savings Goal</h2>
+            <form id="savingsForm">
+                <label for="goalName">Goal Name:</label>
+                <input type="text" id="goalName" placeholder="e.g., Emergency Fund" required>
+
+                <label for="goalAmount">Goal Amount:</label>
+                <input type="number" id="goalAmount" placeholder="e.g., 50000" required>
+
+                <label for="amountSaved">Amount Saved:</label>
+                <input type="number" id="amountSaved" placeholder="e.g., 10000" required>
+
+                <button type="submit">Add Savings Goal</button>
+            </form>
+        </section>
+
+        <section class="savings-list">
+            <h2>Savings Goals Summary</h2>
+            <table id="savingsTable">
+                <thead>
+                    <tr>
+                        <th>Goal Name</th>
+                        <th>Goal Amount</th>
+                        <th>Amount Saved</th>
+                        <th>Remaining Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Savings entries will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="total-savings">
+            <h2>Total Savings: ₹<span id="totalSavings">0</span></h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Personal Finance Manager. All Rights Reserved.</p>
+    </footer>
+
+    <script src="savings.js"></script>
+</body>
+</html>

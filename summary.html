@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Insights</title>
+</head>
+<body>
+    <header>
+        <h1>Financial Insights</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="income.html">Income</a>
+            <a href="expense.html">Expenses</a>
+            <a href="savings.html">Savings</a>
+            <a href="assets.html">Assets</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="insight-summary">
+            <h2>Your Financial Overview</h2>
+            <p>Visualize your income, expenses, and savings to understand your financial health.</p>
+             <!-- Add this section in summary.html -->
+            <section class="date-filter">
+                <label for="startDate">Start Date:</label>
+                      <input type="date" id="startDate">
+    
+                 <label for="endDate">End Date:</label>
+                      <input type="date" id="endDate">
+
+                <button id="filterButton">Filter</button>
+        </section>
+
+        <h3>Monthly Budget</h3>
+                <label for="monthlyBudget">Set your Budget:</label>
+                    <input type="number" id="monthlyBudget" placeholder="Enter amount">
+                <button id="setBudgetButton">Set Budget</button>
+
+
+            <div id="insights"></div>
+        </section>
+        <button id="exportButton">Export Data</button>
+        <h3>Total Assets: ₹<span id="totalAssetsSummary">0</span></h3>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Personal Finance Manager. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url('1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0; 
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #00246B 0%, #0040B3 100%);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #97bdff;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-top: 2px solid #0040B3;
+    padding-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #0040B3;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #0040B3;
+    transform: scale(1.05);
+}
+
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styles */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border-left: 6px solid #0040B3;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #00246B;
+}
+
+form input {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #97bdff;
+}
+
+button {
+    background-color: #00246B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0040B3;
+    transform: translateY(-2px);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+table th {
+    background-color: #97bdff;
+    color: #00246B;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+table tr:nth-child(even) {
+    background-color: #f3f7ff;
+}
+
+.total-income, .total-expenses, .total-savings {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00246B;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #0040B3 0%, #00246B 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 4px solid #97bdff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Enhancements for Buttons, Inputs, Links */
+button:hover, nav a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+nav a:active {
+    transform: scale(0.98);
+}
+
+/* Additional Styling */
+.main-content {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#quick-access {
+    text-align: center;
+}
+
+#cta {
+    text-align: center;
+}
+
+section h2 {
+    color: #00246B;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #00246B;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+}

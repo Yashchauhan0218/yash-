@@ -1,0 +1,54 @@
+<!-- assets.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assets</title>
+</head>
+<body>
+    <header>
+        <h1>Your Assets</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="income.html">Income</a>
+            <a href="expense.html">Expenses</a>
+            <a href="savings.html">Savings</a>
+            <a href="summary.html">Summary</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="asset-entry">
+            <h2>Add New Asset</h2>
+            <label for="asset-name">Asset Name:</label>
+            <input type="text" id="asset-name" required>
+            <label for="asset-value">Asset Value:</label>
+            <input type="number" id="asset-value" required>
+            <button id="addAssetButton">Add Asset</button>
+        </section>
+        
+        <section class="asset-list">
+            <h2>Your Assets</h2>
+            <table id="assetTable">
+                <thead>
+                    <tr>
+                        <th>Asset Name</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Asset entries will go here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Personal Finance Manager. All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets.js"></script>
+</body>
+</html>
